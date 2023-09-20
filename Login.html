@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Shoes Login</title>
+  <link rel="stylesheet" href="Css/Login.css">
+  <script src="Js/Login.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<style>
+  body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("Image/background-shoes.jpg") #000;
+    background-position: center;
+    background-size: cover;
+  }
+</style>
+<body>
+  <div class="wrapper">
+    <form action="#">
+      <h2>Login</h2>
+        <div class="input-field"> 
+        <input type="text" id="mailInput">   
+        <label>Enter your email</label>  
+      </div>
+      <p id="emailErrorMessage" class="error-message"></p>
+      <div class="input-field">
+        <input type="password" id="passwordInput">
+        <span id="showPassword" class="fa fa-eye move-right" onclick="togglePasswsordVisibility()"></span>
+        <label>Enter your password</label>  
+      </div>
+      <p id="passwordErrorMessage" class="error-message"></p>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit" onclick="ValidateInput()">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="Register.html"><u>Register</u></a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
